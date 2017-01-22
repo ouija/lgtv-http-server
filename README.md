@@ -1,9 +1,9 @@
-# NOT MAINTAINED anymore
+# Description
+Easy way to control your LG webOS 3 TV.
+After installing run `npm start` and check out `http://localhost:3000` for examples, or check the docs for HTTP requests.
+Can easily serve as a service for any kind of home automation (host on a Rasberry Pi).
 
-Sorry, I just haven't got the time to keep up. I've gotten a couple of awesome PRs in which this project has been cleaned up and refactored - perhaps one of those is where you may want to go. That being said, this works for me with my TV. Best of luck, and thanks for the great PRs!
-
-//Marcus
-
+Forked from msloth's project.
 
 # LGTV
 
