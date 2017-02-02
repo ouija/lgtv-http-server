@@ -1,8 +1,11 @@
-lgtv = require("lgtv");
-/*---------------------------------------------------------------------------*/
-var retry_timeout = 10;
-var run_test = function() {
-  lgtv.connect('10.0.1.200', function(err, response){
+var lgtv = require("lgtv");
+var express = require('express');
+var router = express.Router();
+var request = require('request');
+var CONFIG = require('../config')
+
+var turnOff = function() {
+  lgtv.connect(CONFIG.lgtvip, function(err, response){
     lgtv.turn_off(function(err, response){
       if (!err) {
         console.log("turn_off succeeded:" + JSON.stringify(response));
@@ -14,4 +17,8 @@ var run_test = function() {
   });
 };
 
-run_test();
+router.get('/', function (req, res) {
+  turnOff()
+});
+
+module.exports = router;

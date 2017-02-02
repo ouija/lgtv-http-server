@@ -33,3 +33,6 @@ node_modules
 # Client Key
 ./client-key.txt
 ./apis/client-key.txt
+
+# Config
+./config.json

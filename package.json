@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/msloth/lgtv.js",
   "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "request": "^2.79.0",
     "websocket": "^1.0.17"
   }
 }
