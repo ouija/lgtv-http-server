@@ -8,8 +8,8 @@ var changeVolume = function(volume) {
   lgtv.connect(CONFIG.lgtvip, function(err, response){
     if (!err) {
       lgtv.set_volume(volume, function(err, response){
-        lgtv.disconnect();
       });
+      lgtv.disconnect();
     }
   });
 };

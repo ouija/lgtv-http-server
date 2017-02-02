@@ -9,8 +9,9 @@ var popAlert = function(alert) {
     if (!err) {
       lgtv.show_float(alert, function(err, response){
         if (!err) {
-          lgtv.disconnect();
+          console.log('Alert fired: ' + alert);
         }
+        lgtv.disconnect();
       });
     }
   });
