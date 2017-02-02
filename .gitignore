@@ -29,3 +29,7 @@ node_modules
 
 #damn osx
 .DS_Store
+
+# Client Key
+./client-key.txt
+./apis/client-key.txt
