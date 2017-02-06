@@ -12,13 +12,13 @@ var turnOff = function() {
       } else {
         console.log("turn_off failed:" + JSON.stringify(response));
       }
-      lgtv.disconnect();
     });
   });
 };
 
 router.get('/', function (req, res) {
   turnOff()
+  res.send('TV was turned off.')
 });
 
 module.exports = router;

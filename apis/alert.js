@@ -11,7 +11,6 @@ var popAlert = function(alert) {
         if (!err) {
           console.log('Alert fired: ' + alert);
         }
-        lgtv.disconnect();
       });
     }
   });

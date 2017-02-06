@@ -11,7 +11,6 @@ var changeInput = function(input) {
         if (!err) {
           console.log('Input was changed to ' + input);
         }
-        lgtv.disconnect();
       });
     }
   });

@@ -951,18 +951,3 @@ exports.set_channel = set_channel; /* set active channel */
 
 // debug and temporary
 exports.temporarydbg = temporarydbg;
-/*---------------------------------------------------------------------------*/
-lgtv = require("lgtv");
-
-var run_test = function() {
-        console.log("Found TV at address running example.");
-        lgtv.connect('10.0.1.200', function(err, response){
-          if (!err) {
-            var turn_on = function(fn) {
-              send_command("", "request", "ssap://system/turnOn", null, fn);
-            };
-          }
-        });
-};
-
-run_test();

@@ -1,4 +1,4 @@
-var lgtv = require("lgtv");
+var lgtv = require("../lgtv");
 var express = require('express');
 var router = express.Router();
 var request = require('request');
@@ -9,7 +9,6 @@ var changeVolume = function(volume) {
     if (!err) {
       lgtv.set_volume(volume, function(err, response){
       });
-      lgtv.disconnect();
     }
   });
 };
@@ -23,5 +22,6 @@ router.get('/:volume', function (req, res) {
     res.send('Volume was set to ' + volume)
   }
 });
+
 
 module.exports = router;

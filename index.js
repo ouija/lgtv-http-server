@@ -31,6 +31,6 @@ app.use('/alert', require('./apis/alert'));
 app.use('/off', require('./apis/turn-off'));
 app.use('/on', require('./apis/turn-on'));
 
-app.listen(3000, function () {
-  console.log('LGTV http server is up in http://localhost:3000')
+app.listen(5555, function () {
+  console.log('LGTV http server is up in http://localhost:5555')
 })
