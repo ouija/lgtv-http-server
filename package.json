@@ -4,6 +4,7 @@
   "description": "Simple lib to interact with and control an LG WebOS smart TV.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
